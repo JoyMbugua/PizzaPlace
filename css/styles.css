@@ -43,11 +43,14 @@ nav ul li {
     padding: 10px;
     letter-spacing: 2px;
 }
+nav ul li:hover {
+    background-color: red;
+}
 nav a:visited, nav a:link {
     text-decoration: none;
     color: white;
 }
-navbar {
+.navbar {
     height: 60px;
     width: 100%;
     position: fixed;
