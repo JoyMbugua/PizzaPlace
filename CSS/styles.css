@@ -127,3 +127,36 @@ navbar {
 .btn2:hover {
     background-color: #d23e50;
 }
+/* checkoutbutton */
+
+.finishOrder {              
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: -265px;
+    z-index: 2;
+    padding: 6px 28px;
+    border-radius: 0;
+    text-align: center;
+}
+/* the buttons */
+
+.btn {
+    background-color: #d23e50;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 7px 10px;
+    letter-spacing: .1em;
+    border-radius: 3px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.btn1 {
+    background-color: #90BF39;
+}
+.btn3 {
+    background-color: #d23e50;
+}
