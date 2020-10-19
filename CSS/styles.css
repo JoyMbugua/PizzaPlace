@@ -47,3 +47,83 @@ nav a:visited, nav a:link {
     text-decoration: none;
     color: white;
 }
+navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    border-radius: 0px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* the receipt */
+.cart {
+    width: 300px;
+    height: 500px;
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    right: -300px; /* hides it */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: #d23e50;
+    padding: 30px;
+    box-shadow: 2px 0 20px 5px rbba(0, 0, 0, 0.24);
+    transition: all 0.25s ease-in-out
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.toggleCart{
+	position: relative;
+}
+
+.fa-circle {
+    font-size: 21px !important;
+    color: #90BF39 ;
+}
+
+.num {
+    font-size: 12px;
+    padding: 3px 6px;
+    color: #fff;
+}
+
+.num, .fa-circle {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+}
+
+#cartToggle{ 
+	display: none;
+}
+
+/*where the magic happens*/
+#cartToggle:checked ~ div.mainBody > .cart{
+	right: 0px;
+}
+
+#cartToggle:checked ~ div.mainBody{
+	right: 100px;
+}
+
+#cartToggle:checked ~ div.mainBody > .cart > button.finishOrder{
+	right: 5px;
+}
+.btn2 {
+    background-color: #90BF39;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.05);
+}
+.btn2:hover {
+    background-color: #d23e50;
+}
