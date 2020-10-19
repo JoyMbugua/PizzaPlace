@@ -24,7 +24,6 @@ nav ul li:hover {
 }
 
 nav {
-   
     width: 100%;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
@@ -44,13 +43,11 @@ nav ul li {
     padding: 10px;
     letter-spacing: 2px;
 }
-nav ul li:hover {
-    background-color: red;
-}
 nav a:visited, nav a:link {
     text-decoration: none;
     color: white;
 }
+
 .navbar {
     height: 60px;
     width: 100%;
@@ -131,8 +128,6 @@ nav a:visited, nav a:link {
 .btn2:hover {
     background-color: #d23e50;
 }
-
-
 
 /* checkoutbutton */
 
@@ -215,6 +210,74 @@ img {
     font-size: 25px;
 }
 
+#menu-all {
+	width: 650px;
+	margin: 0% auto;
+	padding: 1px 0px;
+}
+
+#form {
+	margin: 0% auto;
+	width: 100%;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction: row; */
+	/* justify-content: flex-start; */
+	/* align-items: stretch; */
+}
+.menu-item {
+	flex: 1 150px;
+	min-width: 0;
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 2px rgba(0,0,0, .3);
+    padding: 0 0 10px 0;
+	margin: 3px;
+	border-radius: 1px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-item>h3 {
+	color: #fff;
+	padding: 0 0 0 60px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+}
+
+.controls {
+	/* display: flex; */
+    justify-content: space-between;
+	/* margin: 10px auto 30px; */
+	width: 100%;
+}
+
+.controls>.button {
+	flex: 20px;
+}
+
+.button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+	border-radius: 1px;
+	margin: 1% 3px;
+	padding: .1px 0 .1px 0px;
+    font: 15px;
+	border: 1px solid black;
+	box-shadow: 0 0 0 2px rgba(0,0,0,.3);
+	transition-timing-function: ease-in-out;
+	transition-duration: .3s, .5s, .2s;
+}
+
+.Order > a:visited, a:link {
+    text-decoration: none;
+    color: white;
+}
+
 /* the bottom*/
 
 #finishOrderDialog {
@@ -229,10 +292,10 @@ img {
 }
 
 .buyerInfo {
-    width: 50%;  
+    width: 50%;  /*????????????????????????????????? */
     margin: 0 10px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 
@@ -253,39 +316,41 @@ img {
     padding: 20px;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    margin-bottom: 0;
-    font-size: 25px;
-    text-align: center;
-}
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa:hover {
-  opacity: 0.7;
+
+  footer {
+      background-color: black;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      margin-bottom: 0;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+    background: #55ACEE;
+    color: white;
+  }
 
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
