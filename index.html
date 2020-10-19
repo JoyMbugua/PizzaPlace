@@ -5,46 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria</title>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <style>
         body {
-            background-image: url(images/likemeat-CbNAuxSZTFo-unsplash.jpg);
+            background-image: url(images/david-benes-zsRhTW3qrmo-unsplash.jpg);
             background-size: cover;
             background-position: center;
             color: white;
-            height: 500px;
+            position: relative;
+            
 
         }
         p {
-            background-color: black;
+            font-size: 20px;
+            line-height: 180%;
+            margin-left: 5px;
+            font-family: 'Open Sans Condensed', sans-serif;
         }
+        h1 {
+            color: red;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        nav ul li:hover {
+            background-color: red;
+        }
+    
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="">Order Pizza</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Menu</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+
+                <li class="phoneNum"><a href="#">Contact Us: 0701400400</a></li>
             </ul>
-            <div class="container">
-                <h2>Make Your order today!</h2>
-      
-                
-              <div class="pizza">
-                  <img src="" alt="">
-                  <div class="columns">
-                      <div class="title">Meat Deluxe</div>
-                      <div class="price">From Kshs 700</div>
-                  </div>
-                  <p class="details">The contemporary pizza</p>
-                   <button data-order="meat-deluxe">Customize</button>  <!--might consider taking this to the actual order page -->
-              </div>
-      
+            
+        </nav>
+    </header>
+
+    <h1>Pizza in Wonderland</h1>
+    <p>We serve the best pizza in town! <br> choose from a wide variety of <br> delicious flavors and crusts!</p>
+
+    <!--icons not on brand-->
     <footer>
         
-    </footer>
+        <p>Find us on social media</p>
+        
+        <ul>
+            <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitetr.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
+        </ul>
+        <br>
+        
+     </footer>
 </body>
 </html>
