@@ -6,15 +6,26 @@
     <title>Pizzeria</title>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <style>
+        h3 {
+            font-family: 'Amatic SC', cursive;
+        }
+    </style>
+
     
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Back to Home</a></li>
 
                 <li class="phoneNum"><a href="#">Contact Us: 0701400400</a></li>
             </ul>
@@ -25,8 +36,8 @@
     <form>
         <div class="form-row">
           <div class="form-group col-md-3">
-            <label for="message"></label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Anything else you would like us to know?">
+            <label for="message">Anything else you would like us to know?</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="special instructions">
           </div>
         </div>
         <div class="form-group">
@@ -46,13 +57,12 @@
       
           </div>
         </div>
-        <button data-toggle="modal" data-target="#mymodal5" class="btn btn-lg" id="deliveryOver">Done</button>
+        <button type="button" data-toggle="modal" data-target="#mymodal5" class="btn btn-lg" id="deliveryOver">Done</button>
     
         <div class="modal" id="mymodal5">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal">X</button>
                         <div class="modal-body">
                             <p>Thank You <span></span> <br>
                                 Your order will be delivered soon!
@@ -66,13 +76,8 @@
  
     <footer>
         
-        <p>Find us on social media</p>
-        <ul>
-            <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitetr.com" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
-        </ul>
-        <br>
+        <h3>Visit our website</h3>
+        <p>www.pizzeriawonderland.com</p>
         
      </footer>
 </body>
