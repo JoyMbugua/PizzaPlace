@@ -34,7 +34,7 @@
 </label>
     </div>
     </nav><!-- End of Navigation -->
-    
+
     <!--To include all other navbar items such as the cart etc-->
     <div class="mainBody">
 
@@ -48,3 +48,37 @@
 
         <!-- the Pizzas -->
         <div class="pizzaTable">
+
+                    <!--start of the pizza display-->
+         <!--Pizza 1-->
+         <div class="menus">
+            <p class="name">Bbq Bacon</p>
+            <img src="images/order page/BbqBacon.jpg" alt="Bbq Bacon Pizza">
+            <button data-toggle="modal" data-target="#mymodal" class="btn3 btn addToCart">Add To Cart</button>
+                    <p class="price"><span>800</span>KES</p> 
+
+               
+                    <div class="modal" id="mymodal">  
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal">X</button>
+                                    <h3 class="modal-title listHeading">Toppings:</h3>
+                                    <div class="modal-body">
+                                        <ul class="listOfToppings" id="pizza1">
+                                            <li><input type="checkbox" checked>Bacon</li>
+                                            <li><input type="checkbox" checked>Cheese</li>
+                                            <li><input type="checkbox" checked>Mushrooms</li>
+                                            <li><input type="checkbox" checked>Onion</li>
+                                            <li><input type="checkbox" checked>Pepper</li>
+                                        </ul>
+
+                                        <button class="btn3 btn addTopping" type="button">Add Toppings</button> 
+                                        <button class="btn listOver" type="button">Done</button>
+                                        <h4 class="totalResults" id="Results1">Total: <span>800</span>KES</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     </div>
