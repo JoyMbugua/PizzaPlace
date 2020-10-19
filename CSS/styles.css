@@ -207,3 +207,42 @@ img {
 .modal {
     font-size: 25px;
 }
+
+/* the bottom*/
+
+#finishOrderDialog {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+#finalOrderList h3 {
+    text-align: center;
+}
+
+.buyerInfo {
+    width: 50%;  
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#buyerInfo input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 50%;
+    font-size: 25px;
+}
+#buyerInfo .order {
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#thankMessage {
+    padding: 20px;
+}
+
